@@ -1,0 +1,52 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="zxx">
+
+@await Component.InvokeAsync("_HeadPartial")
+
+<body>
+    <!--header-->
+    @await Component.InvokeAsync("_NavbarPartial")
+
+    <!-- //header -->
+    <!-- main-slider -->
+    @await Component.InvokeAsync("_HeaderPartial")
+    <!-- /main-slider -->
+    <!--/grids-->
+    @await Component.InvokeAsync("_AboutUsPartial")
+    <!--//grids-->
+    <!--/services-->
+    @await Component.InvokeAsync("_DefaultServicePartial")
+    <!--//services-->
+    <!-- stats -->
+    @await Component.InvokeAsync("_DefaultStatisticPartial")
+    <!-- //stats -->
+    <!--/grids2-->
+   @await Component.InvokeAsync("_PropertyPartial")
+    <!--//grids2-->
+    <!-- pricing11 -->
+    @await Component.InvokeAsync("_PlanPartial")
+    <!-- //pricing11 -->
+    <!-- testimonials -->
+    @await Component.InvokeAsync("_TestimonialPartial")
+    <!-- //testimonials -->
+    <!-- home page video popup section -->
+    @await Component.InvokeAsync("_VideoPartial")
+    <!-- //home page video popup section -->
+    <!--/w3l-footer-29-main-->
+   @await Component.InvokeAsync("_FooterPartial")
+    <!--//w3l-footer-29-main-->
+    <!-- Template JavaScript -->
+    @await Component.InvokeAsync("_ScriptPartial")
+
+</body>
+
+</html>

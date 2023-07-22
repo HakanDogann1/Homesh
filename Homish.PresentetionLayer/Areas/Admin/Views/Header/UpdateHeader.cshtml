@@ -1,0 +1,30 @@
+﻿@model Header
+@{
+    ViewData["Title"] = "UpdateHeader";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-md-12">
+    <div class="white_shd full margin_bottom_30">
+        <div class="full graph_head">
+            <div class="heading1 margin_0">
+                <h2>Bizi Seçin</h2>
+            </div>
+        </div>
+        <form method="post">
+            <input type="hidden" asp-for="ID"/>
+            <div>
+                <label>Başlık</label>
+                <input type="text" class="form-control" asp-for="HeaderTitle1" />
+            </div>
+            <div>
+                <label>İçerik</label>
+                <input type="text" class="form-control" asp-for="HeaderTitle2" />
+            </div>
+            <br />
+            <br />
+            <button class="btn btn-outline-success">Kaydet</button>
+        </form>
+    </div>
+</div>
+

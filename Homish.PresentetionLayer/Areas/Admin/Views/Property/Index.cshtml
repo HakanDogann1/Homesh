@@ -1,0 +1,52 @@
+﻿@model List<Homesh.EntityLayer.Concrete.Property>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+    int count = 1;
+}
+
+<div class="col-md-12">
+    <div class="white_shd full margin_bottom_30">
+        <div class="full graph_head">
+            <div class="heading1 margin_0">
+                <h2>Özellikler</h2>
+            </div>
+        </div>
+        <div class="table_section padding_infor_info">
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Ülke</th>
+                            <th>İçerik</th>
+                            <th>Sayı</th>
+                            <th>Sil</th>
+                            <th>Güncelle</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@count</td>
+                                <td>@item.PropertyCountry</td>
+                                <td>@item.PropertyDescription</td>
+                                <td>@item.PropertyCount</td>
+                                <td><a asp-controller="Property" asp-action="DeleteProperty" asp-route-id="ID" class="btn btn-outline-danger">Sil</a></td>
+                                <td><a asp-controller="Property" asp-action="UpdateProperty" asp-route-id="ID" class="btn btn-outline-warning">Güncelle</a></td>
+
+                            </tr>
+                            count++;
+                        }
+
+                    </tbody>
+                </table>
+                <br />
+                <br />
+                <a asp-controller="Property" asp-action="AddProperty" class="btn btn-outline-success">Ekle</a>
+            </div>
+        </div>
+    </div>
+</div>

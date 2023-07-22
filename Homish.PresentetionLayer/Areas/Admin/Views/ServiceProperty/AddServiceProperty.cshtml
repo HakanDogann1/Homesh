@@ -1,0 +1,40 @@
+﻿@model ServiceProperty
+@{
+    ViewData["Title"] = "AddServiceProperty";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-md-12">
+    <div class="white_shd full margin_bottom_30">
+        <div class="full graph_head">
+            <div class="heading1 margin_0">
+                <h2>Hizmetler</h2>
+            </div>
+        </div>
+        <form method="post">
+            <div>
+                <label>Başlık</label>
+                <input type="text" class="form-control" asp-for="ServicePropertyTitle" />
+            </div>
+            <div>
+                <label>İçerik</label>
+                <input type="text" class="form-control" asp-for="ServicePropertyDescription" />
+            </div>
+            <div>
+                <label>Fiyat</label>
+                <input type="text" class="form-control" asp-for="ServicePropertyPrice" />
+            </div>
+            <div>
+                <label>Resim</label>
+                <input type="text" class="form-control" asp-for="ServicePropertyImage" />
+            </div>
+            <br />
+            <br />
+            <button class="btn btn-outline-success">Kaydet</button>
+        </form>
+    </div>
+</div>
+
+
+
+
