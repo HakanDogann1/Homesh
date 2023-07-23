@@ -1,14 +1,14 @@
-﻿using Homesh.DataAccessLayer.Abstract;
-using Homesh.DataAccessLayer.Repository;
-using Homesh.DataAccessLayer.Settings.Abstract;
-using Homesh.EntityLayer.Concrete;
+﻿using Homish.DataAccessLayer.Abstract;
+using Homish.DataAccessLayer.Repository;
+using Homish.DataAccessLayer.Settings.Abstract;
+using Homish.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Homesh.DataAccessLayer.Concrete
+namespace Homish.DataAccessLayer.Concrete
 {
     public class EfTeamDal : GenericRepository<Team>, ITeamDal
     {

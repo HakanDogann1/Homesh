@@ -1,13 +1,13 @@
-﻿using Homesh.BusinessLayer.Abstract;
-using Homesh.DataAccessLayer.Abstract;
-using Homesh.EntityLayer.Concrete;
+﻿using Homish.BusinessLayer.Abstract;
+using Homish.DataAccessLayer.Abstract;
+using Homish.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Homesh.BusinessLayer.Concrete
+namespace Homish.BusinessLayer.Concrete
 {
     public class ContactManager : IContactService
     {

@@ -1,0 +1,81 @@
+﻿@{
+    Layout = null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="zxx">
+
+@await Component.InvokeAsync("_HeadPartial")
+
+<body>
+    <!--header-->
+    @await Component.InvokeAsync("_NavbarPartial")
+
+    <!-- //header -->
+    <!-- about breadcrumb -->
+    <section class="w3l-about-breadcrumb text-center">
+        <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+            <div class="container">
+                <h2 class="title">iletişim</h2>
+                <ul class="breadcrumbs-custom-path mt-2">
+                    <li><a href="#url">Ana Sayfa</a></li>
+                    <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> İletişim </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //about breadcrumb -->
+    <!--/contact-->
+    <section class="w3l-contact-11 py-5">
+        <div class="contacts-main py-lg-5 py-md-4">
+            <div class="title-content text-center">
+                <h6 class="sub-titlehny">Contact</h6>
+                <h3 class="hny-title">Get in touch with us</h3>
+            </div>
+
+
+            @await Html.PartialAsync("AddContact.cshtml")
+            <div class="contant11-top-bg mt-lg-5 mt-4">
+                <div class="container">
+                    <div class="d-grid contact pt-lg-4">
+                        <div class="contact-info-left d-grid text-left">
+                            <div class="contact-info mt-4">
+                                <h4>London Office</h4>
+                                <p class="mb-3"><label>Adres: </label> London, LY-90814 Hill Station 2nd Street</p>
+                                <p class="mb-3"><label>Email : </label> <a href="mailto:homish@email.com" class="email">homish@email.com</a></p>
+                                <p class="mb-3"><label>Telefon : </label> <a href="tel:+1-2345-678-11">+1-2345-678-11</a></p>
+                                <p class="mb-3"><label>Saat : </label> Mon-Fri: 8am – 7pm</p>
+                            </div>
+                            <div class="contact-info mt-4">
+                                <h4>Newyork Office</h4>
+                                <p class="mb-3"><label>Adres: </label> Newyork, NY-90814 Hill Station 3rd Street</p>
+                                <p class="mb-3"><label>Email : </label> <a href="mailto:homish@email.com" class="email">homish@email.com</a></p>
+                                <p class="mb-3"><label>Telefon : </label> <a href="tel:+1-2345-678-11">+1-2345-678-11</a></p>
+                                <p class="mb-3"><label>Saat : </label> Mon-Fri: 8am – 7pm</p>
+                            </div>
+                            <div class="contact-info mt-4">
+                                <h4>Berlin Office</h4>
+                                <p class="mb-3"><label>Adres: </label> Berlin, BY-90814 Hill Station 4th Street</p>
+                                <p class="mb-3"><label>Email : </label> <a href="mailto:homish@email.com" class="email">homish@email.com</a></p>
+                                <p class="mb-3"><label>Telefon : </label> <a href="tel:+1-2345-678-11">+1-2345-678-11</a></p>
+                                <p class="mb-3"><label>Saat : </label> Mon-Fri: 8am – 7pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//contact-->
+    <!--/w3l-footer-29-main-->
+    @await Component.InvokeAsync("_FooterPartial")
+    <!--//w3l-footer-29-main-->
+    <!-- Template JavaScript -->
+    @await Component.InvokeAsync("_ScriptPartial")
+</body>
+
+</html>

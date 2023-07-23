@@ -1,11 +1,12 @@
-﻿using Homesh.BusinessLayer.Abstract;
-using Homesh.DataAccessLayer.Abstract;
-using Homesh.EntityLayer.Concrete;
+﻿using Homish.BusinessLayer.Abstract;
+using Homish.DataAccessLayer.Abstract;
+using Homish.EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Homish.PresentetionLayer.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Route("Admin/[controller]/[action]")]
     public class TestimonialController : Controller
     {
        private readonly ITestimonialService _testimonialService;

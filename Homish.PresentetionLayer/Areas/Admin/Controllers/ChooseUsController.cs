@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Homesh.BusinessLayer.Abstract;
-using Homesh.EntityLayer.Concrete;
+using Homish.BusinessLayer.Abstract;
+using Homish.EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
 using System.Linq;

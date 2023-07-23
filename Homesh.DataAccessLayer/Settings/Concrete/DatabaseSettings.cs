@@ -1,11 +1,11 @@
-﻿using Homesh.DataAccessLayer.Settings.Abstract;
+﻿using Homish.DataAccessLayer.Settings.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Homesh.DataAccessLayer.Settings.Concrete
+namespace Homish.DataAccessLayer.Settings.Concrete
 {
     public class DatabaseSettings : IDatabaseSettings
     {

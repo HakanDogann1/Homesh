@@ -1,0 +1,94 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="zxx">
+
+@await Component.InvokeAsync("_HeadPartial")
+
+<body>
+    <!--header-->
+    @await Component.InvokeAsync("_NavbarPartial")
+
+    <!-- about breadcrumb -->
+    <section class="w3l-about-breadcrumb text-center">
+        <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+            <div class="container py-2">
+                <h2 class="title">Hakkımızda</h2>
+                <ul class="breadcrumbs-custom-path mt-2">
+                    <li><a href="#url">Ana Sayfa</a></li>
+                    <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Hakkımızda </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //about breadcrumb -->
+    <!-- /about-6-->
+    <section class="w3l-cta4 py-5">
+        <div class="container py-lg-5">
+            <div class="ab-section text-center">
+                <h6 class="sub-title">Hakkımızda</h6>
+                <h3 class="hny-title">Yüzünüzdeki gülümseme gibisi yok</h3>
+                <p class="py-3">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum labore sed, veniam nisi sunt laboriosam ducimus, odio
+                    aspernatur fugiat minima blanditiis dignissimos.
+                </p>
+                <div class="row mt-5 text-center">
+                    <div class="col-md-6">
+                        <img src="~/Homish-Starter/assets/images/banner3.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-6 mt-md-0 mt-4">
+                        <img src="~/Homish-Starter/assets/images/banner2.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- //about-6-->
+    <!-- /content-6-->
+   @await Component.InvokeAsync("_ChooseUsPartial")
+    <!-- //content-6-->
+    <!-- stats -->
+    <section class="w3l-statshny py-5" id="stats">
+        <div class="container py-lg-5 py-md-4">
+            <div class="w3-stats-inner-info">
+                <div class="row">
+                    <div class="col-lg-4 col-6 stats_info counter_grid text-left">
+                        <span class="fa fa-smile-o"></span>
+                        <p class="counter">1730</p>
+                        <h4>Mutlu Müşteri</h4>
+                    </div>
+                    <div class="col-lg-4 col-6 stats_info counter_grid1 text-left">
+                        <span class="fa fa-users"></span>
+                        <p class="counter">730</p>
+                        <h4>Projeler</h4>
+                    </div>
+                    <div class="col-lg-4 col-6 stats_info counter_grid mt-lg-0 mt-5 text-left">
+                        <span class="fa fa-database"></span>
+                        <p class="counter">30</p>
+                        <h4>Dallar</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //stats -->
+    <!-- team -->
+  @await Component.InvokeAsync("_TeamPartial")
+    <!-- //team -->
+    <!--/w3l-footer-29-main-->
+    @await Component.InvokeAsync("_FooterPartial")
+    <!--//w3l-footer-29-main-->
+    <!-- Template JavaScript -->
+    @await Component.InvokeAsync("_ScriptPartial")
+
+</body>
+
+</html>

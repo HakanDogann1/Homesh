@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Homesh.BusinessLayer.Abstract
+namespace Homish.BusinessLayer.Abstract
 {
     public interface IGenericService<T> where T : class
     {

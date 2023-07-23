@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Homesh.DataAccessLayer.Settings.Abstract
+namespace Homish.DataAccessLayer.Settings.Abstract
 {
     public interface IDatabaseSettings
     {

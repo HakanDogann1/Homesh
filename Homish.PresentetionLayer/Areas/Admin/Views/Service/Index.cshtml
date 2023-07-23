@@ -1,7 +1,8 @@
-﻿@model List<Homesh.EntityLayer.Concrete.Service>
+﻿@model List<Homish.EntityLayer.Concrete.Service>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+    int count = 1;
 }
 
 <div class="col-md-12">
@@ -29,7 +30,7 @@
                         @foreach (var item in Model)
                         {
                             <tr>
-                                <td>@item.ID</td>
+                                <td>@count</td>
                                 <td>@item.ServiceTitle</td>
                                 <td>@item.ServiceDescription</td>
                                 <td>@item.ServiceIcon</td>
@@ -37,6 +38,7 @@
                                 <td><a asp-controller="Service" asp-action="UpdateService" asp-route-id="ID" class="btn btn-outline-warning">Güncelle</a></td>
 
                             </tr>
+                            count++;
                         }
 
                     </tbody>

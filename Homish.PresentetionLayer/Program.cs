@@ -1,10 +1,10 @@
-using Homesh.BusinessLayer.Abstract;
-using Homesh.BusinessLayer.Concrete;
-using Homesh.DataAccessLayer.Abstract;
-using Homesh.DataAccessLayer.Concrete;
-using Homesh.DataAccessLayer.Settings.Abstract;
-using Homesh.DataAccessLayer.Settings.Concrete;
-using Homesh.EntityLayer.Concrete;
+using Homish.BusinessLayer.Abstract;
+using Homish.BusinessLayer.Concrete;
+using Homish.DataAccessLayer.Abstract;
+using Homish.DataAccessLayer.Concrete;
+using Homish.DataAccessLayer.Settings.Abstract;
+using Homish.DataAccessLayer.Settings.Concrete;
+using Homish.EntityLayer.Concrete;
 using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);

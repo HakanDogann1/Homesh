@@ -1,4 +1,4 @@
-﻿using Homesh.EntityLayer.Abstract;
+﻿using Homish.EntityLayer.Abstract;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Homesh.EntityLayer.Concrete
+namespace Homish.EntityLayer.Concrete
 {
     public class Property: IMongoEntity
     {

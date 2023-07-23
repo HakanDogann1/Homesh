@@ -1,10 +1,11 @@
-﻿using Homesh.BusinessLayer.Abstract;
-using Homesh.EntityLayer.Concrete;
+﻿using Homish.BusinessLayer.Abstract;
+using Homish.EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Homish.PresentetionLayer.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Route("Admin/[controller]/[action]")]
     public class PropertyController : Controller
     {
         private readonly IPropertyService _propertyService;

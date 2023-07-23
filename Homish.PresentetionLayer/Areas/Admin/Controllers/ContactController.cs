@@ -1,4 +1,4 @@
-﻿using Homesh.BusinessLayer.Abstract;
+﻿using Homish.BusinessLayer.Abstract;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Homish.PresentetionLayer.Areas.Admin.Controllers

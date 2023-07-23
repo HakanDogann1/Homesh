@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Homesh.EntityLayer.Abstract
+namespace Homish.EntityLayer.Abstract
 {
     public abstract class IMongoEntity
     {

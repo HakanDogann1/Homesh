@@ -1,4 +1,4 @@
-﻿@model List<Homesh.EntityLayer.Concrete.Property>
+﻿@model List<Homish.EntityLayer.Concrete.Property>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
@@ -34,8 +34,8 @@
                                 <td>@item.PropertyCountry</td>
                                 <td>@item.PropertyDescription</td>
                                 <td>@item.PropertyCount</td>
-                                <td><a asp-controller="Property" asp-action="DeleteProperty" asp-route-id="ID" class="btn btn-outline-danger">Sil</a></td>
-                                <td><a asp-controller="Property" asp-action="UpdateProperty" asp-route-id="ID" class="btn btn-outline-warning">Güncelle</a></td>
+                                <td><a asp-controller="Property" asp-action="DeleteProperty" asp-route-id="@item.ID" class="btn btn-outline-danger">Sil</a></td>
+                                <td><a asp-controller="Property" asp-action="UpdateProperty" asp-route-id="@item.ID" class="btn btn-outline-warning">Güncelle</a></td>
 
                             </tr>
                             count++;

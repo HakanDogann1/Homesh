@@ -1,6 +1,6 @@
-﻿using Homesh.DataAccessLayer.Abstract;
-using Homesh.DataAccessLayer.Settings.Abstract;
-using Homesh.EntityLayer.Abstract;
+﻿using Homish.DataAccessLayer.Abstract;
+using Homish.DataAccessLayer.Settings.Abstract;
+using Homish.EntityLayer.Abstract;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Homesh.DataAccessLayer.Repository
+namespace Homish.DataAccessLayer.Repository
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : IMongoEntity
     {
